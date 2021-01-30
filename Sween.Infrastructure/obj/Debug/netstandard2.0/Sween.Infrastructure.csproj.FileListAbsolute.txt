@@ -1,0 +1,12 @@
+C:\Users\raulf\source\repos\Sween_project\Sween.Infrastructure\bin\Debug\netstandard2.0\Sween.Infrastructure.deps.json
+C:\Users\raulf\source\repos\Sween_project\Sween.Infrastructure\bin\Debug\netstandard2.0\Sween.Infrastructure.dll
+C:\Users\raulf\source\repos\Sween_project\Sween.Infrastructure\bin\Debug\netstandard2.0\Sween.Infrastructure.pdb
+C:\Users\raulf\source\repos\Sween_project\Sween.Infrastructure\bin\Debug\netstandard2.0\Sween.Core.dll
+C:\Users\raulf\source\repos\Sween_project\Sween.Infrastructure\bin\Debug\netstandard2.0\Sween.Core.pdb
+C:\Users\raulf\source\repos\Sween_project\Sween.Infrastructure\obj\Debug\netstandard2.0\Sween.Infrastructure.csprojAssemblyReference.cache
+C:\Users\raulf\source\repos\Sween_project\Sween.Infrastructure\obj\Debug\netstandard2.0\Sween.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\raulf\source\repos\Sween_project\Sween.Infrastructure\obj\Debug\netstandard2.0\Sween.Infrastructure.AssemblyInfo.cs
+C:\Users\raulf\source\repos\Sween_project\Sween.Infrastructure\obj\Debug\netstandard2.0\Sween.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\raulf\source\repos\Sween_project\Sween.Infrastructure\obj\Debug\netstandard2.0\Sween.Infrastructure.csproj.CopyComplete
+C:\Users\raulf\source\repos\Sween_project\Sween.Infrastructure\obj\Debug\netstandard2.0\Sween.Infrastructure.dll
+C:\Users\raulf\source\repos\Sween_project\Sween.Infrastructure\obj\Debug\netstandard2.0\Sween.Infrastructure.pdb

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sween.Views.BirthdayPage"
+             BindingContext="{Binding Main,Source={StaticResource Locator}}"
+             NavigationPage.HasNavigationBar="False"
+             NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+        <Grid BindingContext="{Binding Birth}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height=".05*"></RowDefinition>
+                <RowDefinition Height=".95*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <ImageButton Source="iz.png"
+                             Grid.Column="0"
+                             BackgroundColor="Transparent"
+                             HorizontalOptions="Start"
+                             Margin="5"
+                             Command="{Binding Back1Command}"/>
+                <ImageButton Source="id.png"
+                             Grid.Column="1"
+                             BackgroundColor="Transparent"
+                             HorizontalOptions="End"
+                             Margin="5"
+                             Command="{Binding Next1Command}"/>
+            </Grid>
+            <StackLayout Grid.Row="1">
+                <Label Text="¿Cuándo es tu cumpleaños?" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="nr" Padding="100" HorizontalTextAlignment="Center" />
+                <Label Text=" CUMPLEAÑOS" FontFamily="nr" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Start" WidthRequest="250"/>
+                <DatePicker Date="{Binding Day}" FontFamily="nr" MaximumDate="01/01/2030" MinimumDate="01/01/1920" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="250"/>
+
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
