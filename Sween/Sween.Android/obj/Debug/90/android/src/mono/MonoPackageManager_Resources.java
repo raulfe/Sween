@@ -27,6 +27,8 @@ public class MonoPackageManager_Resources {
 		"Syncfusion.Core.XForms.Android.dll",
 		"Syncfusion.Core.XForms.dll",
 		"Syncfusion.Licensing.dll",
+		"Syncfusion.SfImageEditor.XForms.Android.dll",
+		"Syncfusion.SfImageEditor.XForms.dll",
 		"System.Diagnostics.DiagnosticSource.dll",
 		"System.Net.Http.Extensions.dll",
 		"System.Net.Http.Primitives.dll",

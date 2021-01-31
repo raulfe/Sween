@@ -20,3 +20,5 @@ C:\Users\raulf\source\repos\Sween_project\Sween\Sween\obj\Debug\netstandard2.0\V
 C:\Users\raulf\source\repos\Sween_project\Sween\Sween\obj\Debug\netstandard2.0\Views\MovilPage.xaml.g.cs
 C:\Users\raulf\source\repos\Sween_project\Sween\Sween\obj\Debug\netstandard2.0\Views\UsuarioPage.xaml.g.cs
 C:\Users\raulf\source\repos\Sween_project\Sween\Sween\obj\Debug\netstandard2.0\Views\PasswordPage.xaml.g.cs
+C:\Users\raulf\source\repos\Sween_project\Sween\Sween\obj\Debug\netstandard2.0\Views\HomePage.xaml.g.cs
+C:\Users\raulf\source\repos\Sween_project\Sween\Sween\obj\Debug\netstandard2.0\Views\PreImageView.xaml.g.cs

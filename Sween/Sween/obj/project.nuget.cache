@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xw6cY+EUCK6ISeH2WEBzxbJQPTfnTHbjKpQveE95cyVhaywx/8zrpPkSnmH/FuMNH53a/Vb+o30la7VrZL6jow==",
+  "dgSpecHash": "d9hZVasrCOfko2xUp11IDeFQaWiAFziQSpYGV6NaLoEcpaSWvv+05rWokuAAOYpi6KOhw7dFj8/CW6pxMsOLRg==",
   "success": true,
   "projectFilePath": "C:\\Users\\raulf\\source\\repos\\Sween_project\\Sween\\Sween\\Sween.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\raulf\\.nuget\\packages\\propertychanged.fody\\3.3.1\\propertychanged.fody.3.3.1.nupkg.sha512",
     "C:\\Users\\raulf\\.nuget\\packages\\syncfusion.licensing\\18.4.0.35\\syncfusion.licensing.18.4.0.35.nupkg.sha512",
     "C:\\Users\\raulf\\.nuget\\packages\\syncfusion.xamarin.core\\18.4.0.35\\syncfusion.xamarin.core.18.4.0.35.nupkg.sha512",
+    "C:\\Users\\raulf\\.nuget\\packages\\syncfusion.xamarin.sfimageeditor\\18.4.0.35\\syncfusion.xamarin.sfimageeditor.18.4.0.35.nupkg.sha512",
     "C:\\Users\\raulf\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\raulf\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.6.0\\system.diagnostics.diagnosticsource.4.6.0.nupkg.sha512",
     "C:\\Users\\raulf\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",

@@ -153,6 +153,9 @@
     <PackageReference Include="Syncfusion.Xamarin.Core">
       <Version>18.4.0.35</Version>
     </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfImageEditor">
+      <Version>18.4.0.35</Version>
+    </PackageReference>
     <PackageReference Include="WindowsAzure.Storage">
       <Version>9.3.3</Version>
     </PackageReference>
@@ -189,5 +192,14 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\iz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\eb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cb.png" />
   </ItemGroup>
 </Project>

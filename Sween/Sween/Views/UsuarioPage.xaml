@@ -33,7 +33,7 @@
                 <Label Text="Elige un nombre de usuario" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="nr" Padding="0,100,0,0" HorizontalTextAlignment="Center"/>
                 <Label Text=" Recuerda que así tus amigos te encontraran" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="nr"  HorizontalTextAlignment="Start"/>
                 <Label Text=" NOMBRE USUARIO" FontFamily="nr" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Start" WidthRequest="250" Padding="0,100,0,0"/>
-                <Entry Placeholder="Loni Browcher" FontFamily="nr" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="250"/>
+                <Entry Placeholder="Loni Browcher" FontFamily="nr" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="250" Text="{Binding User.Nick}"/>
 
             </StackLayout>
         </Grid>

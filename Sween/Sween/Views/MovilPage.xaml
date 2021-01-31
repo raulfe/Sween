@@ -32,7 +32,7 @@
             <StackLayout Grid.Row="1">
                 <Label Text="¿Cúal es tu número de móvil?" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="nr" Padding="100" HorizontalTextAlignment="Center"/>
                 <Label Text=" MÓVIL" FontFamily="nr" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Start" WidthRequest="250"/>
-                <Entry Placeholder="5544332211" FontFamily="nr" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="250"/>
+                <Entry Placeholder="5544332211" FontFamily="nr" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="250" Text="{Binding User.Tel}" Keyboard="Telephone"/>
 
             </StackLayout>
         </Grid>

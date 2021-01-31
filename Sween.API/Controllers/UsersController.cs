@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace Sween.API.Controllers
 {
-    [Authorize]
+    
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
@@ -95,7 +95,7 @@ namespace Sween.API.Controllers
             return Ok(ndata);
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public async Task<IActionResult> PutUser(int id, UserDTO ndata) 
         {
             

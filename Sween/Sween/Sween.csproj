@@ -29,6 +29,7 @@
     <PackageReference Include="PropertyChanged.Fody" Version="3.3.1" />
     <PackageReference Include="Syncfusion.Licensing" Version="18.4.0.35" />
     <PackageReference Include="Syncfusion.Xamarin.Core" Version="18.4.0.35" />
+    <PackageReference Include="Syncfusion.Xamarin.SfImageEditor" Version="18.4.0.35" />
     <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
     <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
     <PackageReference Include="Xamarin.FFImageLoading" Version="2.4.11.982" />
@@ -45,6 +46,9 @@
     <EmbeddedResource Update="Views\CreatePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\HomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\LoginPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -52,6 +56,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\PasswordPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PreImageView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\UsuarioPage.xaml">

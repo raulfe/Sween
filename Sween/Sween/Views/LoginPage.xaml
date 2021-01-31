@@ -29,16 +29,16 @@
             </Grid>
             <StackLayout Grid.Row="1" BindingContext="{Binding Login}">
                 <Label Text=" NOMBRE DE USUARIO O MÓVIL" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" Padding="0,80,0,0" FontFamily="nr"/>
-                <Entry WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="40" FontFamily="nr"/>
+                <Entry WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="40" FontFamily="nr" Text="{Binding Nick}"/>
                 <Label Text=" CONTRASEÑA" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" Padding="0,20,0,0" FontFamily="nr"/>
-                <Entry WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="40" FontFamily="nr"/>
+                <Entry WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="40" FontFamily="nr" Text="{Binding Password}" IsPassword="true"/>
                 <Label Text=" ¿Olvidaste tu contraseña?" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" Padding="0,90,0,0" TextColor="MediumPurple" HorizontalTextAlignment="Center" FontFamily="nr"/>
                 <Label Text=" Registrate" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" Padding="0,20,0,0" TextColor="MediumPurple" HorizontalTextAlignment="Center" FontFamily="nr">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding CreateCommand}"/>
                     </Label.GestureRecognizers>
                 </Label>
-                <ImageButton Source="is.png" WidthRequest="200" HeightRequest="40" BackgroundColor="Transparent" HorizontalOptions="Center" VerticalOptions="Center" Margin="30"/>
+                <ImageButton Source="is.png" WidthRequest="200" HeightRequest="40" BackgroundColor="Transparent" HorizontalOptions="Center" VerticalOptions="Center" Margin="30" Command="{Binding LoginCommand}"/>
 
             </StackLayout>
         </Grid>

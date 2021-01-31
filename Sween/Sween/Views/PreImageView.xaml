@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:imageEditor="clr-namespace:Syncfusion.SfImageEditor.XForms;assembly=Syncfusion.SfImageEditor.XForms"
+             xmlns:gradient ="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
+             x:Class="Sween.Views.PreImageView"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <Grid >
+            <gradient:SfGradientView>
+                <gradient:SfGradientView.BackgroundBrush>
+                    <gradient:SfLinearGradientBrush>
+                        <gradient:SfLinearGradientBrush.GradientStops>
+                            <gradient:SfGradientStop Color="MediumPurple" Offset="0.1" />
+                            <gradient:SfGradientStop Color="White" Offset="0.5" />
+                        </gradient:SfLinearGradientBrush.GradientStops>
+                    </gradient:SfLinearGradientBrush>
+                </gradient:SfGradientView.BackgroundBrush>
+            </gradient:SfGradientView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".1*"></RowDefinition>
+                    <RowDefinition Height=".9*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Frame Grid.Row="1"
+                   CornerRadius="60"
+                   BackgroundColor="White">
+                    <imageEditor:SfImageEditor x:Name="EdImg"
+                                               Source="{Binding Img}"
+                                               ImageSaving="EdImg_ImageSaving">
+                        <imageEditor:SfImageEditor.ToolbarSettings>
+                            <imageEditor:ToolbarSettings BackgroundColor="Transparent" BorderColor="Transparent"/>
+                        </imageEditor:SfImageEditor.ToolbarSettings>
+                    </imageEditor:SfImageEditor>
+
+                </Frame>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

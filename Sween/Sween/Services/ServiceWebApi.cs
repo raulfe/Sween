@@ -2,6 +2,7 @@
 using Sween.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Text;
@@ -11,7 +12,7 @@ namespace Sween.Services
 {
     public class ServiceWebApi
     {
-        const string WebApiURL = "";
+        const string WebApiURL = "https://sween.azurewebsites.net";
         const string SASQueryString = "";
         private static HttpClient Client = new HttpClient() { BaseAddress = new Uri(WebApiURL) };
 
@@ -64,5 +65,24 @@ namespace Sween.Services
             }
             return user;
         }
+
+        public static async Task UpdateUser(User info, MemoryStream stream, string dt)
+        {
+            if (stream != null)
+            {
+                var servicioStorage = new ServiceStorage();
+                info.ImageURL = await servicioStorage.UploadUser(info.IdUser.Value, stream, dt);
+            }
+
+            Client.DefaultRequestHeaders.Accept.Clear();
+            Client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+            var url = $"{WebApiURL}/api/Users/{info.IdUser}";
+            var jsonContent = JsonConvert.SerializeObject(info);
+            var respuesta = await Client.PutAsync(url, new StringContent(jsonContent.ToString(), Encoding.UTF8, "application/json"));
+            
+            
+        }
+
+
     }
 }

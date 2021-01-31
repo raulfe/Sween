@@ -82,6 +82,10 @@
               "target": "Package",
               "version": "[18.4.0.35, )"
             },
+            "Syncfusion.Xamarin.SfImageEditor": {
+              "target": "Package",
+              "version": "[18.4.0.35, )"
+            },
             "WindowsAzure.Storage": {
               "target": "Package",
               "version": "[9.3.3, )"
@@ -197,6 +201,10 @@
               "version": "[18.4.0.35, )"
             },
             "Syncfusion.Xamarin.Core": {
+              "target": "Package",
+              "version": "[18.4.0.35, )"
+            },
+            "Syncfusion.Xamarin.SfImageEditor": {
               "target": "Package",
               "version": "[18.4.0.35, )"
             },

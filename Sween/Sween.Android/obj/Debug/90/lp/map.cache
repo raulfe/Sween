@@ -7,6 +7,7 @@ FormsViewGroup
 GalaSoft.MvvmLight.Platform
 Plugin.Media
 Syncfusion.Core.XForms.Android
+Syncfusion.SfImageEditor.XForms.Android
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Core.Runtime
 Xamarin.Android.Arch.Lifecycle.Common

@@ -9,9 +9,9 @@ namespace Sween.Services
 {
     public class ServiceStorage
     {
-        const string StorageURL = "";
-        const string ContainerUser = "";
-        const string SASQueryString = "";
+        const string StorageURL = "https://sweenblobs.blob.core.windows.net";
+        const string ContainerUser = "sweenimages";
+        const string SASQueryString = "?sv=2019-12-12&st=2021-01-31T05%3A01%3A28Z&se=2030-02-01T05%3A01%3A00Z&sr=c&sp=racwdl&sig=Fs0lZZ5jzsyjTCjHyVOsftRK0lJ0R6j2ShBu8cJQPHk%3D";
 
         public async Task<string> UploadUser(int id,Stream stream,string dt)
         {
@@ -25,7 +25,7 @@ namespace Sween.Services
             return await DownloadBlob(blobSAS);
         }
 
-        public string GetFullUserURL(int id, string dt)
+        public string GetFullUserURL(int? id, string dt)
         {
             return $"{StorageURL}/{ContainerUser}/{id}-{dt}.jpg{SASQueryString}";
         }

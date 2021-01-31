@@ -1,5 +1,6 @@
 ﻿using Acr.UserDialogs;
 using GalaSoft.MvvmLight.Command;
+using Sween.Services;
 using Sween.Views;
 using System;
 using System.Collections.Generic;
@@ -59,6 +60,39 @@ namespace Sween.ViewModels
 
         private async void Login()
         {
+            UserDialogs.Instance.ShowLoading("Espere");
+            if (string.IsNullOrEmpty(Nick))
+            {
+                Nick = string.Empty;
+                Password = string.Empty;
+                await App.Current.MainPage.DisplayAlert("Error", "Debes completar los campos", "Aceptar");
+                UserDialogs.Instance.HideLoading();
+                return;
+            }
+            if (string.IsNullOrEmpty(Password))
+            {
+                Password = string.Empty;
+                await App.Current.MainPage.DisplayAlert("Error", "Debes completar los campos", "Aceptar");
+                UserDialogs.Instance.HideLoading();
+                return;
+            }
+
+            App.User = await ServiceWebApi.GetUserByCredentials(Nick,Password);
+            if(App.User != null)
+            {
+                Nick = string.Empty;
+                Password = string.Empty;
+                MainViewModels.GetInstance().Home = new HomeViewModel();
+                await App.Current.MainPage.Navigation.PushAsync(new HomePage(), true);
+                UserDialogs.Instance.HideLoading();
+            }
+            else
+            {
+                Nick = string.Empty;
+                Password = string.Empty;
+                UserDialogs.Instance.HideLoading();
+                await App.Current.MainPage.DisplayAlert("Error", "Credenciales no válidas", "Aceptar");
+            }
 
         }
         #endregion

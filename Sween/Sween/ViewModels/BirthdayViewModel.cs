@@ -1,4 +1,5 @@
 ﻿using GalaSoft.MvvmLight.Command;
+using Sween.Models;
 using Sween.Views;
 using System;
 using System.Collections.Generic;
@@ -10,15 +11,20 @@ namespace Sween.ViewModels
     public class BirthdayViewModel : BaseViewModel
     {
         #region Attributes
-
+        private User user;
+        private DateTime birthday;
         #endregion
 
         #region Properties
-
+        public User User { get { return user; } set { SetValue(ref user, value); } }
+        public DateTime Birthday { get { return birthday; } set { SetValue(ref birthday, value); } }
         #endregion
 
         #region Constructor
-
+        public BirthdayViewModel(User User)
+        {
+            this.User = User;
+        }
         #endregion
 
         #region Commands
@@ -43,7 +49,8 @@ namespace Sween.ViewModels
         #region Functions
         private async void Next()
         {
-            MainViewModels.GetInstance().Movil = new MovilViewModel();
+            this.User.Birthday = Birthday.ToString("yyyy-MM-dd");
+            MainViewModels.GetInstance().Movil = new MovilViewModel(this.User);
             await App.Current.MainPage.Navigation.PushAsync(new MovilPage(), true);
         }
 

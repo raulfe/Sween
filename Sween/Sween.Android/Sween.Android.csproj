@@ -84,6 +84,9 @@
     <PackageReference Include="Syncfusion.Xamarin.Core">
       <Version>18.4.0.35</Version>
     </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfImageEditor">
+      <Version>18.4.0.35</Version>
+    </PackageReference>
     <PackageReference Include="WindowsAzure.Storage">
       <Version>9.3.3</Version>
     </PackageReference>
@@ -150,6 +153,21 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\id.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\eb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\cg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\su.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\nc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\cb.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>

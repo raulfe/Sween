@@ -8,7 +8,7 @@ namespace Sween
 {
     public partial class App : Application
     {
-        public static User User { get; internal set; }
+        public static User User { get;  set; }
         public App()
         {
             InitializeComponent();

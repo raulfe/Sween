@@ -13,6 +13,7 @@ namespace Sween.ViewModels
         public MovilViewModel Movil { get; set; }
         public UsuarioViewModel User { get; set; }
         public PasswordViewModel Pass { get; set; }
+        public HomeViewModel Home { get; set; }
         #endregion
 
         #region Constructor

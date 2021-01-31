@@ -5,7 +5,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[User](
-			[Id_user] [int] NOT NULL,
+			[Id_user] [int] NOT NULL IDENTITY(1,1),
 			[Name] [varchar](50) NOT NULL,
 			[LastName] [varchar](50) NOT NULL,
 			[Email][varchar](50) NOT NULL,
@@ -23,7 +23,7 @@ CREATE TABLE [dbo].[User](
 			GO
 
 CREATE TABLE [dbo].[Messages](
-			[Id_message] [int] NOT NULL,
+			[Id_message] [int] NOT NULL IDENTITY(1,1),
 			[View] [varchar](50) NOT NULL,
 			[Type] [varchar](50) NOT NULL,
 			[Contain][varchar](50) NOT NULL,
@@ -38,7 +38,7 @@ CREATE TABLE [dbo].[Messages](
 			GO
 
 CREATE TABLE [dbo].[Groups](
-			[Id_group] [int] NOT NULL,
+			[Id_group] [int] NOT NULL IDENTITY(1,1),
 			[NameGroup] [varchar](50) NOT NULL,
 			[Date] [datetime] NOT NULL,
 			CONSTRAINT [PK_Groups] PRIMARY KEY CLUSTERED 
@@ -49,7 +49,7 @@ CREATE TABLE [dbo].[Groups](
 			GO
 
 CREATE TABLE [dbo].[UsersGroup](
-			[Id_usergroup] [int] NOT NULL,
+			[Id_usergroup] [int] NOT NULL IDENTITY(1,1),
 			[Id_user] [int] NOT NULL,
 			[Id_group] [int] NOT NULL,
 			CONSTRAINT [PK_UsersGroup] PRIMARY KEY CLUSTERED 

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BindingContext="{Binding Main,Source={StaticResource Locator}}"
+             xmlns:gradient ="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
+             xmlns:ffimageLoading1="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:ffTransform="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations" 
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="Sween.Views.HomePage">
+    <ContentPage.Content>
+        <Grid BindingContext="{Binding Home}">
+            <gradient:SfGradientView>
+                <gradient:SfGradientView.BackgroundBrush>
+                    <gradient:SfLinearGradientBrush>
+                        <gradient:SfLinearGradientBrush.GradientStops>
+                            <gradient:SfGradientStop Color="MediumPurple" Offset="0.3" />
+                            <gradient:SfGradientStop Color="White" Offset="0.5" />
+                        </gradient:SfLinearGradientBrush.GradientStops>
+                    </gradient:SfLinearGradientBrush>
+                </gradient:SfGradientView.BackgroundBrush>
+            </gradient:SfGradientView>
+            <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height=".1*"></RowDefinition>
+                <RowDefinition Height=".9*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".15*"></ColumnDefinition>
+                    <ColumnDefinition Width=".15*"></ColumnDefinition>
+                    <ColumnDefinition Width=".1*"></ColumnDefinition>
+                    <ColumnDefinition Width=".2*"></ColumnDefinition>
+                    <ColumnDefinition Width=".1*"></ColumnDefinition>
+                    <ColumnDefinition Width=".15*"></ColumnDefinition>
+                    <ColumnDefinition Width=".15*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                    <ImageButton Source="eb.png" Grid.Column="0" BackgroundColor="Transparent" Scale="0.5"/>
+                    <ImageButton Source="cg.png" Grid.Column="1" BackgroundColor="Transparent" Scale="0.5"/>
+                    <ffimageLoading1:CachedImage x:Name="ImageRT"
+                                                 VerticalOptions="Center"
+                                                 HorizontalOptions="Center"
+                                                 Source="{Binding Image,Mode=TwoWay}"
+                                                 DownsampleToViewSize="True"
+                                                 Aspect="AspectFit"
+                                                 Grid.Column="3"
+                                                 HeightRequest="80"
+                                                 WidthRequest="80"
+                                                 BackgroundColor="Transparent">
+                        <ffimageLoading1:CachedImage.Transformations>
+                            <ffTransform:CircleTransformation/>
+                        </ffimageLoading1:CachedImage.Transformations>
+                    </ffimageLoading1:CachedImage>
+                    <ImageButton Source="cb.png" Grid.Column="4" BackgroundColor="Transparent" Scale="0.4" HorizontalOptions="Start" Command="{Binding PhotoCommand}"/>
+                    <ImageButton Source="su.png" Grid.Column="5" BackgroundColor="Transparent" Scale="0.5"/>
+                    <ImageButton Source="nc.png" Grid.Column="6" BackgroundColor="Transparent" Scale="0.5"/>
+                </Grid>
+            
+            <Frame Grid.Row="1"
+                   CornerRadius="60"
+                   BackgroundColor="White">
+                
+            </Frame>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

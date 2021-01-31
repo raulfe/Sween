@@ -190,6 +190,19 @@
           "lib/netstandard2.0/Syncfusion.Core.XForms.dll": {}
         }
       },
+      "Syncfusion.Xamarin.SfImageEditor/18.4.0.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "18.4.0.35",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.SfImageEditor.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.SfImageEditor.XForms.dll": {}
+        }
+      },
       "System.Buffers/4.5.0": {
         "type": "package",
         "compile": {
@@ -1076,6 +1089,34 @@
         "syncfusion.xamarin.core.nuspec"
       ]
     },
+    "Syncfusion.Xamarin.SfImageEditor/18.4.0.35": {
+      "sha512": "C1PnGEET5Sq18hkhMxFXgDVAXpfPl/3RDUbG7u4dU6vb31uvIuX4nuSjTlZVL/u+2VCSA5PNyBCUO9cjHblvsA==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfimageeditor/18.4.0.35",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10.0/Syncfusion.SfImageEditor.XForms.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfImageEditor.XForms.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfImageEditor.XForms.xml",
+        "lib/MonoAndroid90/Syncfusion.SfImageEditor.XForms.Android.dll",
+        "lib/MonoAndroid90/Syncfusion.SfImageEditor.XForms.dll",
+        "lib/MonoAndroid90/Syncfusion.SfImageEditor.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfImageEditor.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfImageEditor.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfImageEditor.XForms.xml",
+        "lib/netstandard2.0/Syncfusion.SfImageEditor.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.SfImageEditor.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfImageEditor.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfImageEditor.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfImageEditor.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfImageEditor.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfImageEditor.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfImageEditor.XForms.xml",
+        "syncfusion.xamarin.sfimageeditor.18.4.0.35.nupkg.sha512",
+        "syncfusion.xamarin.sfimageeditor.nuspec"
+      ]
+    },
     "System.Buffers/4.5.0": {
       "sha512": "pL2ChpaRRWI/p4LXyy4RgeWlYF2sgfj/pnVMvBqwNFr5cXg7CXNnWZWxrOONLg8VGdFB8oB+EG2Qw4MLgTOe+A==",
       "type": "package",
@@ -1888,6 +1929,7 @@
       "PropertyChanged.Fody >= 3.3.1",
       "Syncfusion.Licensing >= 18.4.0.35",
       "Syncfusion.Xamarin.Core >= 18.4.0.35",
+      "Syncfusion.Xamarin.SfImageEditor >= 18.4.0.35",
       "WindowsAzure.Storage >= 9.3.3",
       "Xam.Plugin.Media >= 5.0.1",
       "Xamarin.Essentials >= 1.5.3.2",
@@ -1984,6 +2026,10 @@
             "version": "[18.4.0.35, )"
           },
           "Syncfusion.Xamarin.Core": {
+            "target": "Package",
+            "version": "[18.4.0.35, )"
+          },
+          "Syncfusion.Xamarin.SfImageEditor": {
             "target": "Package",
             "version": "[18.4.0.35, )"
           },

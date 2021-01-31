@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cQN1233LWIPghAaVnAnpW6qEYAmep1z7z7KmmhQP5ipIfZZACrd5x6VoxbwLA9m3DLFu1nGtoW0Cf9w2qCsM8g==",
+  "dgSpecHash": "MkpkSwMQPVuU3iTK6hQpqE/K3lGU7vcT62MCLVvy47blj+BuSDv2yNtQOZGP4+EeO1iIvjmZmSVkxdhyhxtuHQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\raulf\\source\\repos\\Sween_project\\Sween\\Sween.iOS\\Sween.iOS.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Users\\raulf\\.nuget\\packages\\propertychanged.fody\\3.3.1\\propertychanged.fody.3.3.1.nupkg.sha512",
     "C:\\Users\\raulf\\.nuget\\packages\\syncfusion.licensing\\18.4.0.35\\syncfusion.licensing.18.4.0.35.nupkg.sha512",
     "C:\\Users\\raulf\\.nuget\\packages\\syncfusion.xamarin.core\\18.4.0.35\\syncfusion.xamarin.core.18.4.0.35.nupkg.sha512",
+    "C:\\Users\\raulf\\.nuget\\packages\\syncfusion.xamarin.sfimageeditor\\18.4.0.35\\syncfusion.xamarin.sfimageeditor.18.4.0.35.nupkg.sha512",
     "C:\\Users\\raulf\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\raulf\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\raulf\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
